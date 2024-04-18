@@ -1,0 +1,10 @@
+<?php
+	$campo_unico=$_POST['campo_unico'];
+	$cedula=$_POST['cedula'];
+	$nombre=$_POST['nombre'];
+	$correo=$_POST['correo'];
+	$tlf=$_POST['tlf'];
+	$dir=$_POST['dir'];
+	$id_parroq=$_POST['id_parroq'];
+	$id_sector=$_POST['id_sector'];
+?>

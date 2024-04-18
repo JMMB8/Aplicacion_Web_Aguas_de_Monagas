@@ -1,0 +1,46 @@
+<?php
+{
+?>
+ <script language="JavaScript" type="text/javascript">
+function Campos_vacios(){
+		if ((document.inicio.login_usuar.value=="") || (document.inicio.passw_usuar.value=="")) {
+		
+		if ((document.inicio.login_usuar.value=="")){
+		alert('DEBE INGRESAR EL NOMBRE DEL USUARIO...');
+		return false;
+		}
+
+		if ((document.inicio.passw_usuar.value=="")){
+		alert('DEBE INGRESAR LA CLAVE DEL USUARIO...');
+		return false;
+		}	
+
+	}
+	return true;}
+	
+	function busquedaVacia(){
+		if ((document.busqueda.campo.value=="")) {
+		alert('DEBE INGRESAR EL VALOR DEL CAMPO A BUSCAR');
+		return false;
+		}	
+	return true;
+	}
+	
+
+	
+	
+	function validar(){
+		if ((document.formulario.apellidoEstud.value=="")||(document.formulario.nombreEstud.value=="")||(document.formulario.cedulaEstud.value=="")||(document.formulario.sexo.value=="0")||(document.formulario.dia.value=="0")||(document.formulario.mes.value=="0")||(document.formulario.year.value=="0")||(document.formulario.lugar_naci.value=="")||(document.formulario.direccHab.value=="")||(document.formulario.apellidoRepresent.value=="") || (document.formulario.nombreRepresent.value=="")||(document.formulario.cedulaRepresent.value=="") || (document.formulario.parentesco.value=="0")||(document.formulario.oficio.value=="")||(document.formulario.dir_represent.value=="")||(document.formulario.nombreMadre.value=="")||(document.formulario.procedencia.value=="")||(document.formulario.id_temp.value=="0")||(document.formulario.id_grado.value=="0")){
+
+	if ((document.formulario.apellidoEstud.value=="")) {   
+		alert('DEBE INGRESAR EL APELLIDO DEL ESTUDIANTE');
+	return false;
+	}
+	
+	if ((document.formulario.nombreEstud.value=="")) {   
+		alert('DEBE INGRESAR EL NOMBRE DEL ESTUDIANTE');
+	return false;
+	}
+		if ((document.formulario.cedulaEstud.value=="")) {   
+		alert('LA CEDULA ES NECESARIA');
+	return

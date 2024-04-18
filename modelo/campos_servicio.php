@@ -1,0 +1,26 @@
+<?php
+		$SQL_SERVI=mysql_query("SELECT * FROM tipo_servicio WHERE id_tipo='$IDENT_SERVICIO'");
+		$CS=mysql_num_rows($SQL_SERVI);
+		
+			if($CS==0){
+			$ID_SERVICIO=0;
+			$DESC_SERVICIO="";
+			
+	$ID_CONDICIONSERV="";
+	$DES_CONDICIONSERV="...";
+				$BOTON="REGISTRAR";
+			}else{
+			$CAMPO_SERVICIO=mysql_fetch_row($SQL_SERVI);
+			$ID_SERVICIO=$CAMPO_SERVICIO[0];
+			$DESC_SERVICIO=$CAMPO_SERVICIO[1];
+				$ID_CONDICIONSERV=$CAMPO_SERVICIO[2];
+				if($ID_CONDICIONSERV=="A"){
+$DES_CONDICIONSERV="ACTIVO";
+}else{
+$DES_CONDICIONSERV="INACTIVO";
+}
+				
+			$BOTON="MODIFICAR";
+			}
+
+?>
